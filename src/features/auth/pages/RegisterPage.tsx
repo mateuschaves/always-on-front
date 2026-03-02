@@ -29,8 +29,8 @@ export function RegisterPage() {
   });
 
   const onSubmit = (data: RegisterForm) => {
-    const { confirmPassword: _confirmPassword, ...credentials } = data;
-    registerUser(credentials);
+    const { name, email, password } = data;
+    registerUser({ name, email, password });
   };
 
   return (

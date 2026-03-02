@@ -22,7 +22,7 @@ export function ForgotPasswordPage() {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = async (_data: ForgotForm) => {
+  const onSubmit = async (_: ForgotForm) => {
     await new Promise((r) => setTimeout(r, 1000));
     setSent(true);
   };
